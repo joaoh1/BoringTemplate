@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "net.fabricmc.example.mixin",
+  "package": "io.github.joaoh1.example",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
   ],
