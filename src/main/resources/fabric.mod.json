@@ -3,7 +3,7 @@
   "id": "example",
   "version": "${version}",
   "name": "Example Mod",
-  "description": "This is a BoredTemplate-based mod, you aren't supposed to see this.",
+  "description": "This is a BoredTemplate-based mod, if you are seeing this, this is either a showcase or extremely laziness, probably the second one.",
   "authors": [
     "joaoh1"
   ],
@@ -25,6 +25,6 @@
   "depends": {
     "fabricloader": ">=0.7.2",
     "fabric": ">=0.4.28",
-    "minecraft": "1.15.x"
+    "minecraft": ">=1.15"
   }
 }
