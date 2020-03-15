@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "example",
+  "id": "₢id",
   "version": "${version}",
   "name": "Example Mod",
   "description": "This is a BoredTemplate-based mod, if you are seeing this, this is either a showcase or extremely laziness, probably the second one.",
@@ -12,15 +12,15 @@
     "sources": "https://github.com/"
   },
   "license": "CC0-1.0",
-  "icon": "assets/example/icon.png",
+  "icon": "assets/₢id/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.joaoh1.example.ExampleMod"
+      "io.github.joaoh1.₢id.ExampleMod"
     ]
   },
   "mixins": [
-    "example.mixins.json"
+    "₢id.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.7.2",

@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "io.github.joaoh1.example",
+  "package": "io.github.joaoh1.₢id.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
   ],

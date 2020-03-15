@@ -1,4 +1,4 @@
-package io.github.joaoh1.example.mixin;
+package io.github.joaoh1.₢id.mixin;
 
 import net.minecraft.client.gui.screen.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;

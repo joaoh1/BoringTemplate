@@ -1,4 +1,4 @@
-package io.github.joaoh1.example;
+package io.github.joaoh1.₢id;
 
 import net.fabricmc.api.ModInitializer;
 
