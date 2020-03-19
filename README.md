@@ -10,4 +10,4 @@ You should be able to setup BoringTemplates for your own usage by the same way y
 
 ## License
 
-This template, like the original template which this is based on, is available under the CC0 license. A copy of the MIT license is contained in this repository as a personal QoL feature and it isn't applied on this template.
+This template, like the original template which this is based on, is available under the CC0 license. A copy of the MIT license is contained in this repository as a personal quality-of-life feature and it isn't applied on this template.
