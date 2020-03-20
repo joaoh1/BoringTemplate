@@ -7,8 +7,12 @@ sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
 archivesBaseName = project.archives_base_name
+
+branch = System.env.GITHUB_REF
+branch = branch.substring(branch.lastIndexOf("/")+1)
+
 if (System.env.ONE_PLUS_ONE == "TWO") {
-	version = "${project.mod_version}.${System.env.GITHUB_REF}+${System.env.GITHUB_RUN_NUMBER}"
+	version = "${project.mod_version}.${project.branch}+${System.env.GITHUB_RUN_NUMBER}"
 } else {
 	version = project.mod_version
 }
