@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "id": "₢id",
-  "version": "${version}",
+  "id": "crid",
+  "version": "1.0.0-nether",
   "name": "Example Mod",
   "description": "This is a BoredTemplate-based mod, if you are seeing this, this is either a showcase or extremely laziness, probably the second one.",
   "authors": [
@@ -12,15 +12,15 @@
     "sources": "https://github.com/"
   },
   "license": "CC0-1.0",
-  "icon": "assets/₢id/icon.png",
+  "icon": "assets/crid/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.joaoh1.₢id.ExampleMod"
+      "io.github.joaoh1.crid.ExampleMod"
     ]
   },
   "mixins": [
-    "₢id.mixins.json"
+    "crid.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.7.2",
