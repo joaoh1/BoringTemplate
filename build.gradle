@@ -20,9 +20,6 @@ if (System.env.ONE_PLUS_ONE == "TWO") {
 
 group = project.maven_group
 
-minecraft {
-}
-
 repositories {
 	mavenCentral()
 }
