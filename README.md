@@ -6,7 +6,7 @@ This is my personal template, it's specially made for my own needs, and therefor
 
 ## Usage
 
-You should be able to setup BoringTemplates for your own usage by the same way you setup the Fabric Example Mod template. The mysterious `crid` should not be questioned but it should be replaced with a real mod id. 
+You should be able to setup BoringTemplates for your own usage by the same way you setup the Fabric Example Mod template. The mysterious `crid` should be replaced with a real mod id and `build.gradle` must be changed in order to reflect the mod's actual repository. 
 
 ## License
 
