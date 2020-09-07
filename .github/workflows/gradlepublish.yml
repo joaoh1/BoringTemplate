@@ -1,4 +1,4 @@
-name:  Build & Detonate Mod
+name: Build Mod
 
 on: push
 
@@ -14,16 +14,8 @@ jobs:
         java-version: 14
     - name: Build with Gradle
       run: gradle build
-    - name: Setup Deno
-      uses: denolib/setup-deno@v2
-      with:
-        deno-version: v1.x
-    - name: Detonate the full JAR
-      run: deno run --allow-read --allow-write --allow-run --unstable https://raw.githubusercontent.com/joaoh1/Detonater/master/mod.ts folder build/libs
     - name: Upload build artifacts
       uses: actions/upload-artifact@v1
       with:
         name: build-artifacts
-        path: |
-          build/libs
-          detonatedmods
+        path: build/libs
