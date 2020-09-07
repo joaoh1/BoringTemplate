@@ -63,20 +63,6 @@ jar {
 
 // configure the maven publication
 publishing {
-	repositories {
-		maven {
-		    name = "GitHubPackages"
-			// crid | replace the link with the correct repository
-            url = uri("https://maven.pkg.github.com/joaoh1/BoringTemplate")
-            credentials {
-                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
-                password = project.findProperty("gpr.key") ?: System.getenv("PASSWORD")
-            }
-		}
-		// uncomment to publish to the local maven
-		// mavenLocal()
-	}
-
 	publications {
 		mavenJava(MavenPublication) {
 			// add all the jars that should be included when publishing to maven
@@ -87,5 +73,11 @@ publishing {
 				builtBy remapSourcesJar
 			}
 		}
+	}
+
+	// select the repositories you want to publish to
+	repositories {
+		// uncomment to publish to the local maven
+		// mavenLocal()
 	}
 }
