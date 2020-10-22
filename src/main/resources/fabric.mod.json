@@ -3,12 +3,12 @@
   "id": "crid",
   "version": "${version}",
   "name": "Example Mod",
-  "description": "This is a BoredTemplate-based mod, if you are seeing this, this is either a showcase or extremely laziness, probably the second one.",
+  "description": "This is a mod based on Boring Template, if you are seeing this, this is either a showcase or extremely laziness, the second might be more likely.",
   "authors": [
     "joaoh1"
   ],
   "contact": {
-    "homepage": "https://curseforge.com/",
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/",
     "sources": "https://github.com/"
   },
   "license": "CC0-1.0",

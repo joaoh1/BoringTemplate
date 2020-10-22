@@ -1,5 +1,7 @@
 package io.github.joaoh1.crid;
 
+import java.util.List;
+
 import net.fabricmc.api.ModInitializer;
 
 public class ExampleMod implements ModInitializer {

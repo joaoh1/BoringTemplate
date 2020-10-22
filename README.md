@@ -2,11 +2,11 @@
 
 # Boring Template
 
-This is my personal template, it's specially made for my own needs, and therefore, it doesn't consider other people's use cases (however, you can still use it if you don't like the other existing templates). This is a fork of the [Fabric Example Mod](https://github.com/FabricMC/fabric-example-mod), which is more generic, therefore, a better template for regular human beings. This template has an integration with GitHub Actions, originally inspired by [Blueprint](https://github.com/FabLabsMC/Blueprint)'s GitHub Packages system, now its it's own thing.
+Welcome to my personal template! It's a fork of [Fabric Example Mod](https://github.com/FabricMC/fabric-example-mod) meant to fit my own needs like supporting the latest JDK, matching the usual standard of my mods, using GitHub Actions, etc. but you are free to use it as well!
 
 ## Usage
 
-You should be able to setup BoringTemplates for your own usage by the same way you setup the Fabric Example Mod template. The mysterious `crid` should be replaced with a real mod id and `build.gradle` must be changed in order to reflect the mod's actual repository.
+You should be able to setup Boring Template for your own usage by the same way you setup the Fabric Example Mod template. The mysterious `crid` must be replaced with the real mod id.
 
 <!--
 ## Download
@@ -23,5 +23,5 @@ This template, like the original template which this is based on, is available u
 
 <!-- The commented text is meant for the projects based on this template, for the license of the template, see above.
 
-This mod is licensed under the MIT license. You can freely include the mod on any modpack with no permission.
+This mod is licensed under the MIT license. You can freely include the mod on any modpack with no permission. Usage of this mod's code on other projects is allowed as long as attribution is given.
 -->
