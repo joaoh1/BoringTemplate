@@ -3,11 +3,8 @@ plugins {
 	id 'maven-publish'
 }
 
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(15)
-    }
-}
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
 
 archivesBaseName = project.archives_base_name
 
@@ -48,7 +45,6 @@ processResources {
 // ensure that the encoding is set to UTF-8 and that the build works on Java 8.
 tasks.withType(JavaCompile) {
 	options.encoding = "UTF-8"
-	options.release = 8
 }
 
 // Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
