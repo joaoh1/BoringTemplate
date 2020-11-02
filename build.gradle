@@ -4,14 +4,13 @@ plugins {
 }
 
 archivesBaseName = project.archives_base_name
+group = project.maven_group
 
 if (System.env.GITHUB_ACTIONS == "true") {
 	version = "${project.mod_version}-github.${System.env.GITHUB_RUN_NUMBER}"
 } else {
 	version = project.mod_version
 }
-
-group = project.maven_group
 
 repositories {
 	mavenCentral()
@@ -29,13 +28,8 @@ dependencies {
 processResources {
 	inputs.property "version", project.version
 
-	from(sourceSets.main.resources.srcDirs) {
-		include "fabric.mod.json"
+	filesMatching("fabric.mod.json") {
 		expand "version": project.version
-	}
-
-	from(sourceSets.main.resources.srcDirs) {
-		exclude "fabric.mod.json"
 	}
 }
 
