@@ -3,12 +3,9 @@ plugins {
 	id 'maven-publish'
 }
 
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
-
 archivesBaseName = project.archives_base_name
 
-if (System.env.CI == "true") {
+if (System.env.GITHUB_ACTIONS == "true") {
 	version = "${project.mod_version}-github.${System.env.GITHUB_RUN_NUMBER}"
 } else {
 	version = project.mod_version
@@ -21,7 +18,7 @@ repositories {
 }
 
 dependencies {
-	//to change the versions, see the gradle.properties file
+	// to change the versions, see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
@@ -45,14 +42,21 @@ processResources {
 // ensure that the encoding is set to UTF-8 and that the build works on Java 8.
 tasks.withType(JavaCompile) {
 	options.encoding = "UTF-8"
+	options.release = 8
 }
 
-// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
-// if it is present.
-// If you remove this task, sources will not be generated.
-task sourcesJar(type: Jar, dependsOn: classes) {
-	classifier = "sources"
-	from sourceSets.main.allSource
+java {
+	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
+	// if it is present.
+	// If you remove this task, sources will not be generated.
+	withSourceJars()
+
+	// if Java 8 is used, demand the next LTS release (Java 11)
+	toolchain {
+		if (JavaVersion.current().isJava8()) {
+			languageVersion = JavaLanguageVersion.of(11)
+		}
+	}
 }
 
 jar {

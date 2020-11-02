@@ -3,7 +3,7 @@
   "id": "crid",
   "version": "${version}",
   "name": "Example Mod",
-  "description": "This is a mod based on Boring Template, if you are seeing this, this is either a showcase or extremely laziness, the second might be more likely.",
+  "description": "This is a mod based on BoringTemplate, if you are seeing this, this is either a showcase or extremely laziness, although the second is more likely.",
   "authors": [
     "joaoh1"
   ],
