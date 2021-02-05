@@ -23,5 +23,5 @@ This template, like the original template which this is based on, is available u
 
 <!-- The commented text is meant for the projects based on this template, for the license of the template, see above.
 
-This mod is licensed under the MIT license. You can freely include the mod on any modpack with no permission. Usage of this mod's code on other projects is allowed as long as attribution is given.
+This mod is licensed under the MIT license. You can freely include the mod on any modpack with no permission. Usage of this mod's code on other projects or derivatives of this mod is allowed as long as attribution is given.
 -->
