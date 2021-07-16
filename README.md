@@ -1,4 +1,4 @@
-<img src="./src/main/resources/assets/crid/icon.png" align="right" width="128px"/>
+<img src="./src/main/resources/assets/modid/icon.png" align="right" width="128px"/>
 
 # Boring Template
 
@@ -6,7 +6,7 @@ Welcome to my personal template! It's a fork of [Fabric Example Mod](https://git
 
 ## Usage
 
-You should be able to setup Boring Template for your own usage by the same way you setup the Fabric Example Mod template. The mysterious `crid` must be replaced with the real mod id.
+You should be able to setup Boring Template for your own usage by the same way you setup the Fabric Example Mod template. All instances of `modid` must be replaced with the real mod id.
 
 <!--
 ## Download

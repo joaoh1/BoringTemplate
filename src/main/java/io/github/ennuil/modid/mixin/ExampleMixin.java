@@ -1,4 +1,4 @@
-package io.github.joaoh1.crid.mixin;
+package io.github.ennuil.modid.mixin;
 
 import net.minecraft.client.gui.screen.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
@@ -8,7 +8,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(TitleScreen.class)
 public class ExampleMixin {
-	@Inject(at = @At("HEAD"), method = "init()V")
+	@Inject(
+		at = @At("HEAD"),
+		method = "init()V"
+	)
 	private void init(CallbackInfo info) {
 		System.out.println("This line is printed by Boring Template's template mixin!");
 	}

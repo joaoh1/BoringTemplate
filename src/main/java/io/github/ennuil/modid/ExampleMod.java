@@ -1,4 +1,4 @@
-package io.github.joaoh1.crid;
+package io.github.ennuil.modid;
 
 import net.fabricmc.api.ModInitializer;
 
